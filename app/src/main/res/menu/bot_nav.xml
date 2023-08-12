@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/explore"
+        android:title="Explore"
+        android:icon="@drawable/eye"
+        android:iconTint="#0F3D59"
+
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/connection"
+        android:title="Network"
+        android:iconTint="#0F3D59"
+        android:icon="@drawable/connection"
+        android:visible="true"/>
+    <item
+        android:id="@+id/chat"
+        android:title="Chat"
+        android:iconTint="#0F3D59"
+        android:icon="@drawable/chat"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/contact"
+        android:title="Contact"
+        android:iconTint="#0F3D59"
+        android:icon="@drawable/contactbook"
+        android:visible="true"/>
+
+
+    <item
+        android:id="@+id/group"
+        android:title="Group"
+        android:iconTint="#0F3D59"
+        android:icon="@drawable/hashtag"
+        android:visible="true"/>
+
+
+
+
+</menu>

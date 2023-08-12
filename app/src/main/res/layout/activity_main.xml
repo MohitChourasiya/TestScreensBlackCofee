@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/joinTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="join As"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:layout_marginBottom="50dp"
+        android:textAlignment="center"/>
+<RelativeLayout
+    android:id="@+id/personalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_below="@+id/joinTxt"
+    android:layout_marginBottom="30dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/personalCardsmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:cardCornerRadius="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/group"
+                android:id="@+id/userH"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="8dp"
+                />
+            <TextView
+                android:id="@+id/personalTxtH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal"
+                android:layout_toRightOf="@+id/userH"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+
+            <TextView
+                android:id="@+id/personBotTxtH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="join and build real time community"
+                android:layout_toRightOf="@+id/userH"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/personalTxtH"
+                android:layout_marginBottom="8dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/personalBigLayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardElevation="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginEnd="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/group"
+            android:id="@+id/user"
+            android:layout_alignParentLeft="true"
+            android:layout_marginEnd="8dp"
+            />
+        <TextView
+            android:id="@+id/personalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal"
+            android:layout_toRightOf="@+id/user"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <TextView
+            android:id="@+id/personBotTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="join and build real time community"
+            android:layout_toRightOf="@+id/user"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/personalTxt"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/descTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="27dp"
+            android:text="If you want to network with the community ,use other service on the app,chat,make free audio and video calls,join as Personal User"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/personBotTxt"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/personConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/suitcaseMain"
+
+    android:layout_marginBottom="30dp"
+    android:layout_below="@+id/personalLayout">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/suitcaseCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp"
+        android:visibility="visible"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/suitcase"
+                android:id="@+id/suitcaseH"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="8dp"
+                />
+            <TextView
+                android:id="@+id/suitcaseTxtH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:layout_toRightOf="@+id/suitcaseH"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+
+            <TextView
+                android:id="@+id/suitcaseBotTxtH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="World largest real time service community"
+                android:layout_toRightOf="@+id/suitcaseH"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/suitcaseTxtH"
+                android:layout_marginBottom="8dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/suitcaseBigLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="20dp"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        android:layout_marginEnd="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/suitcase"
+            android:id="@+id/suitcase"
+            android:layout_alignParentLeft="true"
+            android:layout_marginEnd="8dp"
+            />
+        <TextView
+            android:id="@+id/suitcaseTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal"
+            android:layout_toRightOf="@+id/suitcase"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <TextView
+            android:id="@+id/suitcaseBotTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="join and build real time community"
+            android:layout_toRightOf="@+id/suitcase"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/suitcaseTxt"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/suitcaseDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="35dp"
+            android:text="if you are any kind of service provider and want to sell your services to the community, join as Business user"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/suitcaseBotTxt"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/suitcaseConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/merchantMain"
+        android:layout_marginBottom="30dp"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/merchantCardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="40dp"
+            android:visibility="visible"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/merchant"
+                    android:id="@+id/merchantH"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginEnd="8dp"
+                    />
+                <TextView
+                    android:id="@+id/merchantTxtH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal"
+                    android:layout_toRightOf="@+id/merchantH"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+
+                <TextView
+                    android:id="@+id/merchantBotTxtH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="join and build real time community"
+                    android:layout_toRightOf="@+id/merchantH"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/merchantTxtH"
+                    android:layout_marginBottom="8dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/merchantBigLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/merchant"
+                android:id="@+id/merchant"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="8dp"
+                />
+            <TextView
+                android:id="@+id/merchantTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merchant"
+                android:layout_toRightOf="@+id/merchant"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+
+            <TextView
+                android:id="@+id/merchantBotTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="World's largest real time merchant's community"
+                android:layout_toRightOf="@+id/merchant"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/merchantTxt"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/merchantDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="27dp"
+                android:text="If you want to network with the community ,use other service on the app,chat,make free audio and video calls,join as Personal User"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/merchantBotTxt"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/merchantConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONFIRM"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

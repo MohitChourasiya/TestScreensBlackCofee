@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/netcalf"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/refineTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refine"
+
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/backBtn"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/arrow"
+                android:layout_centerVertical="true"
+                android:textColor="@color/netcalf"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/availTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Select Your Availability"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="59dp"
+            android:layout_marginBottom="12dp"
+            app:boxStrokeColor="#E8E6EA"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:endIconTint="@color/netcalf"
+            app:endIconMode="custom"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/statusTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Add Your Status"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="59dp"
+            android:layout_marginBottom="12dp"
+            app:boxStrokeColor="#E8E6EA"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:endIconTint="@color/netcalf"
+            app:endIconMode="custom"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+
+
+            <TextView
+                android:id="@+id/distanceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Hyper local Distance"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="40km"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/netcalf"
+            android:max="100"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <TextView
+                android:id="@+id/distanceTxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Km"
+                android:layout_marginStart="3dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 km"
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/purposeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Select Purpose"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/photoCard"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginEnd="15dp">
+
+
+                <TextView
+                    android:id="@+id/phototxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coffee"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card"
+                android:layout_gravity="center"
+                android:layout_width="75dp"
+                android:layout_height="45dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginEnd="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/tennishTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Business"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shopCard"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginEnd="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/shopTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hobbies"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/runCard"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginEnd="15dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/runTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friendship"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/musicCard"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginEnd="15dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/musicTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movies"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/yogaCard"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginEnd="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/yogaTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dinning"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_vertical"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cookCard"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginEnd="15dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/cookTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dating"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/swimCard"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginEnd="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/swimTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Matrimony"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_vertical"
+
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/submitBtn"
+                android:layout_gravity="center"
+                android:layout_below="@+id/seekbar2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:cardBackgroundColor="@color/netcalf"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="36dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginEnd="90dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Save &amp; Explore"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
